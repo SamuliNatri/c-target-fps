@@ -15,7 +15,7 @@ int tile_size = 25;
 void* memory;
 BITMAPINFO bitmap_info;
 
-float target_seconds_per_frame = 1.0f / 60.0f;
+float target_seconds_per_frame = 1.0f / 30.0f;
 
 LARGE_INTEGER frequency;
 
@@ -225,8 +225,6 @@ wWinMain(HINSTANCE instance,
                                                   end_counter);
         
         start_counter = end_counter;
-        
-        player_x += 10;
         
         clear_screen(0x111111);
         
